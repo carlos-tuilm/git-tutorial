@@ -51,3 +51,8 @@ git reset . (it can be an specific file also)
 Resets all the changes made in the working area (careful but useful):
 
 git checkout -- . (it can be an specific file also)
+
+Creates a new commit (version):
+
+git add .
+git commit -m "Version 2"
