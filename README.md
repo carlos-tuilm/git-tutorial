@@ -56,3 +56,10 @@ Creates a new commit (version):
 
 git add .
 git commit -m "Version 2"
+
+From this point we can change between 3 commits or versions
+
+To switch between between different commits:
+
+git checkout *insert the commit hash* 
+
