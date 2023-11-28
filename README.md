@@ -57,9 +57,83 @@ Creates a new commit (version):
 git add .
 git commit -m "Version 2"
 
-From this point we can change between 3 commits or versions
+Switch between different commits:
 
-To switch between between different commits:
+git checkout _add git hash found in git log_
 
-git checkout *insert the commit hash* 
+NOTE: When updating from a different version we will create branches from that version!
+
+Git only sees the commits from behind. To view all the made commits use:
+
+git log --all
+git alog --all --graph (shows a more graphical representation of the branching)
+
+NOTE: The master branch specifies the branch name 
+
+To restore until certain commit and avoiding branching:
+
+git checkout _add git hash found in git log_ *name of the file/directory*
+
+To assign aliases to git commands:
+
+git config --global alias.s "status" 
+git config --global alias.cm "commit -m"
+git config --global alias.co "checkout"
+
+NOTE: In the first e.g, everytime we now issue "git s" it will be equivalent to typing "git status"
+
+Ignores file(s)/directory(ies) that are not meant to be added to the branch (important for keys and personal information):
+
+touch .gitgnore
+*inside the file just type the name of the files that you wish to ignore*
+git add .
+git commit -m "Added the .gitignore file"
+
+To remove Git from our project:
+
+rm -rf .git 
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Github + Git integration
+
+The analogy to Github is Google Drive where we can: 
+1) store all of our files on the cloud to avoid losing our data. 
+2) sync backups from a local folder to the cloud
+3) sync backips from the Cloud to the local folder (2-Way sync)
+
+The Git installed directory is called the "local repository" and in Github is called "remote repository"
+
+Links our local repository to a remote repository:
+
+git remote add origin https://github.com/carlos-tuilm/git-tutorial.git
+
+NOTE: By convention we should call our remote repository "origin"
+NOTE: The URL points at the repository that we wish to upload our local repository
+
+Checks if our local repository is linked to a remote repository:
+
+git remote 
+git remote -v
+
+NOTE: -v flag gives more detailed information
+
+To remove a link to remote repository:
+
+git remote remove origin
+
+Terminology used for Git:
+1) Push: Uploading to Github
+2) Pull: Downloading from Github
+
+Configures Git with our Github username:
+
+git config --global credential.username "carlos-tuilm"
+
+NOTE: This has to be done in order to Push our code to Github
+
+Push our code to Github:
+
+git push origin *master or git hash*
 
