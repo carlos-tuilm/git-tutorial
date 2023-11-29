@@ -149,6 +149,14 @@ git push origin *master or git hash*
 
 NOTE: The git log -all command will tell us when the HEAD/master branch is ahead of the origin/master branch when
 working on a project
+NOTE: Doing this will update the remote repository with the local one
+
+This commands creates a shorcut for "git push=git push origin master":
+
+git push origin master --set-upstream
+
+NOTE: Git only "pushes" commits NOT files in the "changes space"
+
 
 
 
