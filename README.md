@@ -137,3 +137,18 @@ Push our code to Github:
 
 git push origin *master or git hash*
 
+NOTE: In this case, I created a token key in Github > git-tutorial > Settings > Developer options. This is a safer 
+practice when working with these projects.
+NOTE: When checking the git log --all, we will see that a remote tracking branch has been created.
+
+To sync the changes from our local repository to the remote repository:
+
+git add .
+git commit -m "Something"
+git push origin *master or git hash*
+
+NOTE: The git log -all command will tell us when the HEAD/master branch is ahead of the origin/master branch when
+working on a project
+
+
+
