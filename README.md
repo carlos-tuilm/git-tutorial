@@ -157,6 +157,29 @@ git push origin master --set-upstream
 
 NOTE: Git only "pushes" commits NOT files in the "changes space"
 
+Every time we use "git commit --amend -m "something corrected"" our HEAD/master will branch out of the origin/master.
+This is due to the fact that we overwrote over our local commit in order to correct some mistakes, this makes that the
+remote files do not coincide with the cronology of our work. An NON-RECOMMENDED practice to maintain the HEAD/master 
+branch aligned with the origin/master branch is to:
+
+git push origin master -f 
+
+NOTE: The -f flag enforces the HEAD/master to OVERWRITE the origin/master branch on our remote repository. This will 
+REPLACE the contents of the current remote files which CANNOT be recovered!
+
+Updates the actual local repository to the were the remote/origin is currenlty positioned:
+
+git fetch
+
+NOTE: This is done because remote branches DO NOT update automatically when changes are commited to it.
+NOTE: This is VERY useful when working on a team project when we want to see if some changes were commited by other users.
+NOTE: We can simply emulate this by creating a directory outside our current project and use "git clone *url address of the remote repository*"
+
+Syncs our local repository to the current remote repository:
+
+git pull origin *master or any other branch*
+git pull origin --set-up-stream (does the same shortchut is before)
+
 
 
 
