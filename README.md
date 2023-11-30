@@ -1,4 +1,4 @@
-#Git Tutorial
+# Git Tutorial
 
 To set up git and track all the files inside the current directory:
 
@@ -96,7 +96,7 @@ $ rm -rf .git
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-#Github + Git integration
+# Github + Git integration
 
 The analogy to Github is Google Drive where we can: 
 1) store all of our files on the cloud to avoid losing our data. 
