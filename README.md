@@ -1,4 +1,4 @@
-Git Tutorial
+#Git Tutorial
 
 To set up git and track all the files inside the current directory:
 
@@ -85,7 +85,7 @@ NOTE: In the first e.g, everytime we now issue "git s" it will be equivalent to 
 Ignores file(s)/directory(ies) that are not meant to be added to the branch (important for keys and personal information):
 
 $ touch .gitgnore
-# inside the file just type the name of the files that you wish to ignore
+//inside the file just type the name of the files that you wish to ignore
 $ git add .
 $ git commit -m "Added the .gitignore file"
 
@@ -96,7 +96,7 @@ $ rm -rf .git
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-Github + Git integration
+#Github + Git integration
 
 The analogy to Github is Google Drive where we can: 
 1) store all of our files on the cloud to avoid losing our data. 
