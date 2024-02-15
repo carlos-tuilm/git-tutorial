@@ -101,7 +101,7 @@ $ rm -rf .git
 The analogy to Github is Google Drive where we can: 
 1) store all of our files on the cloud to avoid losing our data. 
 2) sync backups from a local folder to the cloud
-3) sync backips from the Cloud to the local folder (2-Way sync)
+3) sync backups from the Cloud to the local folder (2-Way sync)
 
 The Git installed directory is called the "local repository" and in Github is called "remote repository"
 
@@ -131,7 +131,7 @@ Configures Git with our Github username:
 
 $ git config --global credential.username "carlos-tuilm"
 
-NOTE: This has to be done in order to Push our code to Github
+NOTE: This has to be done to Push our code to Github
 
 Push our code to Github:
 
